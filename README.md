@@ -19,7 +19,7 @@ Run the following command to download the script:
 wget https://github.com/hashicorp/packer/blob/master/contrib/azure-setup.sh
 
 
-### 3. Make the Script Executable
+### 3. Download the Azure Setup Script
 Set execution permissions for the script:
 ```bash
 chmod +x azure-setup.sh
