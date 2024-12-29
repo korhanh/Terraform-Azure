@@ -16,11 +16,11 @@ Run the following command to download the script:
 
 ```bash
 wget https://github.com/hashicorp/packer/blob/master/contrib/azure-setup.sh
-```bash
+```
 
 ### 3. Make the Script Executable
 Set execution permissions for the script:
 
 ```bash
 chmod +x azure-setup.sh
-```bash
+```
