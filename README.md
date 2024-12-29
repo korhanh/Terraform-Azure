@@ -8,62 +8,19 @@ This project provides a guide for setting up and managing Azure resources using 
 
 ### 1. Prepare Your Environment
 - Ensure you have an active Azure subscription.
-- Use [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/features) for an easier setup.  
+- Use [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/features) for an easier setup.
   _If you're not using Azure Cloud Shell, additional configurations are required._
 
 ### 2. Download the Azure Setup Script
 Run the following command to download the script:
+
 ```bash
 wget https://github.com/hashicorp/packer/blob/master/contrib/azure-setup.sh
-3. Make the Script Executable
+```bash
+
+### 3. Make the Script Executable
 Set execution permissions for the script:
 
-bash
-Copy code
+```bash
 chmod +x azure-setup.sh
-4. Run the Setup Script
-For non-Azure Cloud Shell environments, run:
-
-bash
-Copy code
-./azure-setup.sh setup
-Follow the instructions carefully and save the output for future use.
-5. Configure Your Setup
-Copy the sample configuration file:
-
-bash
-Copy code
-cp setup.sh.sample setup.sh
-Update the setup.sh file with your environment-specific values.
-6. Apply the Configuration
-Source the configuration to load environment variables:
-
-bash
-Copy code
-. ./setup.sh
-7. Deploy Resources with Terraform
-Run the following command to provision your Azure infrastructure:
-
-bash
-Copy code
-terraform apply
-Features
-Ease of Use: Simplified deployment using Terraform and Azure Cloud Shell.
-Customizable Setup: Modify the configuration file to suit your project needs.
-Streamlined Workflow: Automate infrastructure deployment and management effortlessly.
-Requirements
-An active Azure account
-Azure CLI (if not using Azure Cloud Shell)
-Terraform installed locally or accessible via Azure Cloud Shell
-Getting Started
-Use the setup script to configure your Azure environment.
-Update setup.sh to include your Azure credentials and preferences.
-Execute Terraform commands to manage your resources.
-Contributions and Feedback
-Contributions are welcome! If you encounter issues or have suggestions for improvement, feel free to open an issue or submit a pull request.
-
-License
-This project is licensed under the MIT License.
-
-Credits
-Created and maintained by korhanh.
+```bash
