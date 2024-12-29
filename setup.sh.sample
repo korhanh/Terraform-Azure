@@ -1,0 +1,2 @@
+export TF_VAR_resource_group_name="CHANGEME"
+export TF_VAR_mysql_server_name="CHANGEME"
