@@ -1,16 +1,25 @@
-# Azure with Terraform Setup Guide
+# Azure Setup with Terraform
 
-Easily set up and deploy resources on Azure using Terraform.
+This project provides a guide for setting up and managing Azure resources using Terraform. Follow the steps below to configure and deploy your infrastructure.
 
-## Prerequisites
+---
 
-- An Azure account with an active subscription.  
-- Access to [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/features).  
-  *If you're not using Azure Cloud Shell, additional setup is required.*  
+## How It Works
 
-## Setup Instructions  
+### 1. Prepare Your Environment
+- Ensure you have an active Azure subscription.
+- Use [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/features) for an easier setup.  
+  _If you're not using Azure Cloud Shell, additional configurations are required._
 
-1. **Download the Azure Setup Script**  
-   Run the following command to download the script:  
-   ```bash
-   wget https://github.com/hashicorp/packer/blob/master/contrib/azure-setup.sh
+---
+
+### 2. Download the Azure Setup Script
+Run the following command to download the script:
+```bash
+wget https://github.com/hashicorp/packer/blob/master/contrib/azure-setup.sh
+
+
+### 3. Make the Script Executable
+Set execution permissions for the script:
+```bash
+chmod +x azure-setup.sh
